@@ -2,8 +2,8 @@
     <Source>
         <Name>telepathy-rakia</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Packager>
         <License>LGPL-2.1-only</License>
         <PartOf>network.im</PartOf>
@@ -21,7 +21,7 @@
         <Files>
             <Path fileType="library">/usr/lib64/telepathy-rakia/telepathy-rakia</Path>
             <Path fileType="data">/usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.sofiasip.service</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="man">/usr/share/man/man8/telepathy-rakia.8</Path>
             <Path fileType="data">/usr/share/telepathy/managers/rakia.manager</Path>
         </Files>
     </Package>
@@ -32,19 +32,28 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="3">telepathy-rakia</Dependency>
+            <Dependency release="4">telepathy-rakia</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/base-connection.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/codec-param-formats.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/connection-aliasing.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/debug.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/event-target.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/handles.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/media-manager.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/sofia-decls.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/text-manager.h</Path>
+            <Path fileType="header">/usr/include/telepathy-rakia-0.7/rakia/util.h</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2018-04-21</Date>
+        <Update release="4">
+            <Date>2018-07-30</Date>
             <Version>0.8.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Update>
     </History>
 </PISI>
